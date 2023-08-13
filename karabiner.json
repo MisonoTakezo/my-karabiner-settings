@@ -16,18 +16,56 @@
         },
         "rules": [
           {
-            "description": "Fn + A to Escape",
+            "description": "left_option + A to Escape",
             "manipulators": [
               {
                 "from": {
                   "key_code": "a",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["left_option"]
                   }
                 },
                 "to": [
                   {
                     "key_code": "escape"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "left_option + S to left_arrow",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "s",
+                  "modifiers": {
+                    "mandatory": ["left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "left_option + D to down_arrow",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "d",
+                  "modifiers": {
+                    "mandatory": ["left_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "down_arrow"
                   }
                 ],
                 "type": "basic"
@@ -248,7 +286,7 @@
               },
               "to": [
                 {
-                  "key_code": "fn"
+                  "key_code": "left_option"
                 }
               ]
             },
@@ -499,6 +537,16 @@
               "to": [
                 {
                   "key_code": "h"
+                }
+              ]
+            },
+            {
+              "from": {
+                "key_code": "v"
+              },
+              "to": [
+                {
+                  "key_code": "right_option"
                 }
               ]
             },
