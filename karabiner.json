@@ -18,6 +18,46 @@
         },
         "rules": [
           {
+            "description": "left_option + j to mouse left click",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "j",
+                  "modifiers": {
+                    "mandatory": ["left_option"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "pointing_button": "button1"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "left_option + l to mouse right click",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "l",
+                  "modifiers": {
+                    "mandatory": ["left_option"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "pointing_button": "button2"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "right_option + right_shift + F to $",
             "manipulators": [
               {
@@ -1753,7 +1793,9 @@
               },
               "to": [
                 {
-                  "key_code": "vk_none"
+                  "mouse_key": {
+                    "x": -1536
+                  }
                 }
               ]
             }
