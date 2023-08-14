@@ -932,6 +932,84 @@
             ]
           },
           {
+            "description": "right_option + f18 to open_bracket",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "f18",
+                  "modifiers": {
+                    "mandatory": ["right_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "open_bracket"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "right_option + right_shift + f18 to open_brace",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "f18",
+                  "modifiers": {
+                    "mandatory": ["right_option", "right_shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "open_bracket",
+                    "modifiers": ["right_shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "right_option + f19 to close_bracket",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "f19",
+                  "modifiers": {
+                    "mandatory": ["right_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "close_bracket"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "right_option + right_shift + f19 to close_brace",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "f19",
+                  "modifiers": {
+                    "mandatory": ["right_option", "right_shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "close_bracket",
+                    "modifiers": ["right_shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Hold 'spacebar' for left_control",
             "manipulators": [
               {
@@ -1207,6 +1285,16 @@
             },
             {
               "from": {
+                "key_code": "comma"
+              },
+              "to": [
+                {
+                  "key_code": "vk_none"
+                }
+              ]
+            },
+            {
+              "from": {
                 "key_code": "d"
               },
               "to": [
@@ -1291,7 +1379,7 @@
               },
               "to": [
                 {
-                  "key_code": "n"
+                  "key_code": "vk_none"
                 }
               ]
             },
@@ -1301,7 +1389,7 @@
               },
               "to": [
                 {
-                  "key_code": "m"
+                  "key_code": "n"
                 }
               ]
             },
@@ -1311,7 +1399,7 @@
               },
               "to": [
                 {
-                  "key_code": "vk_none"
+                  "key_code": "m"
                 }
               ]
             },
@@ -1367,6 +1455,16 @@
             },
             {
               "from": {
+                "key_code": "period"
+              },
+              "to": [
+                {
+                  "key_code": "vk_none"
+                }
+              ]
+            },
+            {
+              "from": {
                 "key_code": "q"
               },
               "to": [
@@ -1381,7 +1479,7 @@
               },
               "to": [
                 {
-                  "key_code": "vk_none"
+                  "key_code": "f19"
                 }
               ]
             },
@@ -1421,7 +1519,7 @@
               },
               "to": [
                 {
-                  "key_code": "vk_none"
+                  "key_code": "f18"
                 }
               ]
             },
