@@ -28,6 +28,12 @@
                     "optional": ["caps_lock"]
                   }
                 },
+                "parameters": {
+                  "basic.simultaneous_threshold_milliseconds": 50,
+                  "basic.to_if_alone_timeout_milliseconds": 200,
+                  "basic.to_delayed_action_delay_milliseconds": 200,
+                  "basic.to_if_held_down_threshold_milliseconds": 200
+                },
                 "to": [
                   {
                     "key_code": "grave_accent_and_tilde"
@@ -48,10 +54,17 @@
                     "optional": ["caps_lock"]
                   }
                 },
+                "parameters": {
+                  "basic.simultaneous_threshold_milliseconds": 20,
+                  "basic.to_if_alone_timeout_milliseconds": 20,
+                  "basic.to_delayed_action_delay_milliseconds": 20,
+                  "basic.to_if_held_down_threshold_milliseconds": 20
+                },
                 "to": [
                   {
                     "key_code": "4",
-                    "modifiers": ["right_shift"]
+                    "modifiers": ["right_shift"],
+                    "repeat": true
                   }
                 ],
                 "type": "basic"
@@ -68,6 +81,12 @@
                     "mandatory": ["right_option", "right_shift"],
                     "optional": ["caps_lock"]
                   }
+                },
+                "parameters": {
+                  "basic.simultaneous_threshold_milliseconds": 20,
+                  "basic.to_if_alone_timeout_milliseconds": 20,
+                  "basic.to_delayed_action_delay_milliseconds": 20,
+                  "basic.to_if_held_down_threshold_milliseconds": 20
                 },
                 "to": [
                   {
