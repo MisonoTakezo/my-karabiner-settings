@@ -18,6 +18,68 @@
         },
         "rules": [
           {
+            "description": "right_option + n to grave_accent_and_tilde",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "n",
+                  "modifiers": {
+                    "mandatory": ["right_option"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "grave_accent_and_tilde"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "right_option + right_shift + F to $",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "f",
+                  "modifiers": {
+                    "mandatory": ["right_option", "right_shift"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "4",
+                    "modifiers": ["right_shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "right_option + right_shift + H to ^",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "h",
+                  "modifiers": {
+                    "mandatory": ["right_option", "right_shift"],
+                    "optional": ["caps_lock"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "6",
+                    "modifiers": ["right_shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "left_option + A to Escape",
             "manipulators": [
               {
@@ -367,25 +429,6 @@
             ]
           },
           {
-            "description": "right_option + right_shift + F to $",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                    "mandatory": ["right_option", "right_shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "4"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "right_option + G to 5",
             "manipulators": [
               {
@@ -437,26 +480,6 @@
                 "to": [
                   {
                     "key_code": "6"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "right_option + right_shift + H to ^",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "mandatory": ["right_option", "right_shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "6",
-                    "modifiers": ["right_shift"]
                   }
                 ],
                 "type": "basic"
@@ -854,25 +877,6 @@
             ]
           },
           {
-            "description": "right_option + n to grave_accent_and_tilde",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "n",
-                  "modifiers": {
-                    "mandatory": ["right_option"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "grave_accent_and_tilde"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "right_option + right_shift + n to tilde",
             "manipulators": [
               {
@@ -932,11 +936,50 @@
             ]
           },
           {
-            "description": "right_option + f18 to open_bracket",
+            "description": "right_option + f18 to period",
             "manipulators": [
               {
                 "from": {
                   "key_code": "f18",
+                  "modifiers": {
+                    "mandatory": ["right_option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "period"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "right_option + right_shift + f18 to greater_than",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "f18",
+                  "modifiers": {
+                    "mandatory": ["right_option", "right_shift"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "period",
+                    "modifiers": ["right_shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "right_option + f19 to open_bracket",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "f19",
                   "modifiers": {
                     "mandatory": ["right_option"]
                   }
@@ -951,11 +994,11 @@
             ]
           },
           {
-            "description": "right_option + right_shift + f18 to open_brace",
+            "description": "right_option + right_shift + f19 to open_brace",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "f18",
+                  "key_code": "f19",
                   "modifiers": {
                     "mandatory": ["right_option", "right_shift"]
                   }
@@ -971,11 +1014,11 @@
             ]
           },
           {
-            "description": "right_option + f19 to close_bracket",
+            "description": "right_option + f20 to close_bracket",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "f19",
+                  "key_code": "f20",
                   "modifiers": {
                     "mandatory": ["right_option"]
                   }
@@ -990,11 +1033,11 @@
             ]
           },
           {
-            "description": "right_option + right_shift + f19 to close_brace",
+            "description": "right_option + right_shift + f20 to close_brace",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "f19",
+                  "key_code": "f20",
                   "modifiers": {
                     "mandatory": ["right_option", "right_shift"]
                   }
@@ -1379,7 +1422,7 @@
               },
               "to": [
                 {
-                  "key_code": "vk_none"
+                  "key_code": "n"
                 }
               ]
             },
@@ -1389,7 +1432,7 @@
               },
               "to": [
                 {
-                  "key_code": "n"
+                  "key_code": "m"
                 }
               ]
             },
@@ -1399,7 +1442,7 @@
               },
               "to": [
                 {
-                  "key_code": "m"
+                  "key_code": "f18"
                 }
               ]
             },
@@ -1479,7 +1522,7 @@
               },
               "to": [
                 {
-                  "key_code": "f19"
+                  "key_code": "f20"
                 }
               ]
             },
@@ -1519,7 +1562,7 @@
               },
               "to": [
                 {
-                  "key_code": "f18"
+                  "key_code": "f19"
                 }
               ]
             },
