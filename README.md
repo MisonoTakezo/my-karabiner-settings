@@ -1,6 +1,6 @@
-# カスタム Karabiner 設定の導入ガイド
+# 武蔵配列
 
-このガイドでは、私ののカスタム Karabiner 設定を導入する手順を説明します。Karabiner を使用してキーボードやマウスの動作をカスタマイズすることができます。
+このガイドでは、武蔵配列の Karabiner 設定を導入する手順を説明します。
 
 ## 前提条件
 
@@ -11,16 +11,12 @@
 
 1. このリポジトリをクローンするか、ZIP ファイルとしてダウンロードして解凍します。
 
-2. ダウンロードしたフォルダ内に、Karabiner の設定ファイルである `karabiner.json` を配置します。
+2. Karabiner-Elements をインストールする
+   ![](img1.png)
 
-3. karabiner.jsonは以下のパスに存在します。
+3. Karabiner-Elements を開き、「Misc」の「Export & Inport」からダウンロードした karabiner.json をアップロードする
 
-   ```shell
-   ~/.config/karabiner/
-   ```
+   ![](img2.png)
 
-   karabiner.json を配置したフォルダから設定ファイルをコピーし、置き換えます。
-
-   ```shell
-   cp /path/to/downloaded/karabiner.json ~/.config/karabiner/
-   ```
+設定が反映されていれば OK
+![](img3.png)
