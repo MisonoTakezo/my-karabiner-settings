@@ -1,4 +1,4 @@
-# 武蔵配列
+# 武蔵配列 (Takezo Layout)
 
 ## 基本配列
 
@@ -18,7 +18,7 @@
 ![](images/img7.png)
 ![](images/img12.png)
 
-このガイドでは、武蔵配列の Karabiner 設定を導入する手順を説明します。
+このガイドでは、武蔵配列 (Takezo Layout)の Karabiner 設定を導入する手順を説明します。
 
 ## 前提条件
 
